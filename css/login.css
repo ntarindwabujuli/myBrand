@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+body{
+    background-color: #02251F;
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    
+}
+.formCard{
+    background-color: #09362E;
+    width: 637px;
+    height: 400px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.formFields{
+    display: flex;
+    flex-direction: column;
+    gap:1rem; 
+}
+#style{
+    background-color:#155045;
+    border-style: none;
+    border-radius: 4px;
+    padding: 4px 5px 5px 10px;
+    display: flex;
+    
+}
+::placeholder{
+    color: #64FFDA;
+    font-family: "Fira Code", monospace;
+    font-size: x-small;
+}
+#loginBtn{
+    display: flex;
+    background-color: #129880;
+    border: 2px solid #06F2C9;
+    border-radius: 3px;
+    font-family: "Fira Code", monospace;
+    font-size: 8px;
+    color:#F6FFFD;
+    padding: 4px 15px 5px 70px;
+}

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.white{
+  color:#DDE2FF;
+}
+body {
+  background-color: #16564B;
+}
+.sideBar{
+  background-color: #19473F;
+  height: 1234px;
+  width: 150px;
+}
+.sideBar img{
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+.overView{
+  display: flex;
+  flex-direction: row;
+  color:#DDE2FF;
+}
+.overView h4{
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+.articlesTab{
+  display: flex;
+  flex-direction: row;
+  color:#DDE2FF;
+}
+.sideBarTabs{
+  margin-top: 15px;
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px; 
+  padding-left: 1rem;
+   
+}
+.innerContent{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+.bodyAdmin{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+  gap:5rem;
+}
+
+.searchBox input{
+  background-color: #09816B;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 75px;
+}
+
+::placeholder{
+  color:#16C2A3;
+}
+.topNav{
+  display: flex;
+  flex-direction: row;
+  gap:40rem;
+}
+.bodyAdmin{
+  display: flex;
+  flex-direction: column;
+}
+.adminCards{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+}
+.cardTotal{
+  background-color: #19473F;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  padding-top: 5%;
+}
+.cardTotalOne{
+  background-color: #19473F;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  padding-top: 5%;
+}
+.cardTotalTwo{
+  background-color: #19473F;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  padding-top: 5%;
+}
+.border-xl{
+  border: solid 1px white;
+  border-radius: 10px;
+}
+.addNewBlog{
+  background-color: #19473F;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 3px;
+  border: solid 1px #20EDC8;
+}
+.recentBlogTitle {
+  padding-left: 25%;
+  display: flex;
+  flex-direction: row;
+}
+#blogTitle {
+  color: #ccd6f6;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+#blogParagraphOne {
+  color: #ccd6f6;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  padding-top: 10px;
+}
+.blogCategory {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 20px;
+}
+.blogContainerOne {
+  max-width: 323px;
+  background: #19473f;
+  box-shadow: 0px 10px 30px rgba(2, 12, 27, 0.7);
+  border-radius: 10px;
+  height: 305px;
+  padding: 20px 20px 20px 20px;
+}
+.blogContainerTwo {
+  max-width: 323px;
+  background: #19473f;
+  box-shadow: 0px 10px 30px rgba(2, 12, 27, 0.7);
+  border-radius: 10px;
+  height: 305px;
+  padding: 20px 20px 20px 20px;
+}
+.blogContainerThree {
+  max-width: 323px;
+  background: #19473f;
+  box-shadow: 0px 10px 30px rgba(2, 12, 27, 0.7);
+  border-radius: 10px;
+  height: 305px;
+  padding: 20px 20px 20px 20px;
+}
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 2rem;
+}
+.blogIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 10px 0px 10px;
+  color: white;
+}
+.headingBlog {
+  padding-top: 15px;
+}
+.recentBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.viewMore {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  color: #64ffda;
+  background-color: rgba(1, 177, 146, 0.19);
+  border: 1px solid #01b192;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.getIntouchTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.miniTitle {
+  color: #64ffda;
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+  padding-top: 3%;
+}
+#styleField {
+  color: #64ffda;
+  font-family: "Fira Code", monospace;
+  background-color: #02251f;
+  border-style: none;
+}
+.color-header{
+  color: #C4CADC;
+  font-family: "Fira Code", monospace;
+}
