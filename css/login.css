@@ -31,13 +31,22 @@ body{
     flex-direction: column;
     gap:1rem; 
 }
-#style{
+#input-field{
     background-color:#155045;
     border-style: none;
     border-radius: 4px;
     padding: 4px 5px 5px 10px;
     display: flex;
+    color:white;
     
+}
+#password_field{
+    background-color:#155045;
+    border-style: none;
+    border-radius: 4px;
+    padding: 4px 5px 5px 10px;
+    display: flex;
+    color:white;
 }
 ::placeholder{
     color: #64FFDA;
@@ -53,4 +62,7 @@ body{
     font-size: 8px;
     color:#F6FFFD;
     padding: 4px 15px 5px 70px;
+}
+.text-red-light{
+    color: red;
 }

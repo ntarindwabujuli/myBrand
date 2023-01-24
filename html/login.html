@@ -17,15 +17,21 @@
                 </div>
             </a>
         </div>
-        <div class="loginForm">
-            <div class="formCard">
-                <div class="formFields">
-                <input type="text" id="style" placeholder="Email"></input>
-                <input type="password" id="style" placeholder="password"></input>
-                <input type="button" id="loginBtn" value="Signin" href="../html/adminPanel.html"></input>
+        <form id="login_form">
+            <div class="loginForm">
+                <div class="formCard">
+                    <div class="formFields">
+                    <input name="email" type="text" id="input-field" placeholder="Email"></input>
+                    <span id="email_error" class="text-red-light left-3 bottom-0 error"></span>
+                    <input name="password" type="password" id="password_field" placeholder="password"></input>
+                    <span id="password_error" class="text-red-light left-3 bottom-0 error"></span>
+                    <input type="submit" id="loginBtn" value="Signin"></input>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
+        
     </main>
+    <script type="module" src="../js/loginForm.js"></script>
 </body>
 </html>
