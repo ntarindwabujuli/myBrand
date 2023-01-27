@@ -37,11 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 }
             ]
         },
-        {
-            name:'reason',
-            field:"reason_field",
-            error:"reason_error",
-        },
+       
         {
             name:'description',
             field:"description_field",
@@ -70,8 +66,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
     })
 
     form.addEventListener("submit", (event) => {
+        event.preventDefault();
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
+        let message = {};
+        for(let each of formData){
+            message[each[0]] = each[1];
+
+        }
+        console.log(message);
         let isFormValid = checkValidation(fields)
         if(!isFormValid){
             event.preventDefault();

@@ -156,6 +156,21 @@ body {
   height: 305px;
   padding: 20px 20px 20px 20px;
 }
+#styleTitleField{
+  padding: 10px 160px ;
+  border-radius: 4px;
+}
+::placeholder{
+  color:grey;
+}
+#saveBtn{
+  padding:10px ;
+  background-color: #01b192;
+  color:white;
+  border-radius: 5px;
+  border-color:rgba(1, 177, 146, 0.19);
+}
+
 .blogContainerThree {
   max-width: 323px;
   background: #19473f;
