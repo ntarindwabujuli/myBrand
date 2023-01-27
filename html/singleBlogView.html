@@ -192,22 +192,24 @@
                 <form id="contact_form">
                     <div class="commentSection">
                         <input name="names" id="names_field" placeholder="Full Names" type="text" />
-                        <span id="names_error" class="text-red-light left-3 bottom-0 error"></span>
+                        <span id="names_error" class="text-red-light"></span>
                         <input name="email" id="email_field" placeholder="Email" type="text" />
-                        <span id="email_error" class="text-red-light left-3 bottom-0 error"></span>
+                        <span id="email_error" class="text-red-light"></span>
                         <textarea name="description" id="description_field">
-                            Write something ....
+                        
                         </textarea>
-                          <span id="description_error" class="text-red-light auto-hide-error bg-brand_bold p-4 rounded-xl translate-y-32 left-3 absolute top-0 error z-10">
+                          <span id="description_error" class="text-red-light"></span>
                         
                       </div>
                 </form>
                 
-                <a href="mailto:jackson@ntarindwa.dev" target="_blank">
-                    <button class="btn cta-contact ease-transition" name="ContactMe">
-                        Comment Now!
-                    </button>
-                </a>
+                    <div>
+                        <button class="btn cta-contact ease-transition" name="ContactMe" type="submit">
+                            Comment Now!
+                        </button>
+                    </div>
+                    
+            
             </section>
             <footer>
                 <div id="social-icons-footer">
@@ -242,7 +244,7 @@
     </div>
 
     <script src="../js/script.js"></script>
-    <script src="../js/commentSection.js " type="module"></script>
+    <script src="../js/commentSection.js" type="module"></script>
 </body>
 
 </html>

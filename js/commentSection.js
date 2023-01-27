@@ -38,11 +38,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
             ]
         },
         {
-            name:'reason',
-            field:"reason_field",
-            error:"reason_error",
-        },
-        {
             name:'description',
             field:"description_field",
             error:"description_error",

@@ -51,19 +51,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
     form.addEventListener("submit", (event) => {
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
+        for(let each of formData){
+            console.log(each)
+        }
         let isFormValid = checkValidation(fields)
         if(!isFormValid){
             event.preventDefault();
-        }else {
-            window.location.href = "dashboard.html";
         }
     });
-
-
-
-
-
-
 
 
 
