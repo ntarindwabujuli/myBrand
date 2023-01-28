@@ -18,6 +18,7 @@ let fontList = [
   "Georgia",
   "Courier New",
   "cursive",
+  "montserrat"
 ];
 
 //Initial Settings
