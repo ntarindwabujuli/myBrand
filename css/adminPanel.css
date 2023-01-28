@@ -53,9 +53,17 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 3rem;
-  gap:5rem;
+  gap:45rem;
 }
-
+.uploadBtn{
+  padding: 100px 180px 20px 50px;
+  margin-left: 40px;
+}
+#file-input{
+  border-style: dashed;
+  border-color: #01b192;
+  margin-left: 40px;
+}
 .searchBox input{
   background-color: #09816B;
   border-style: none;

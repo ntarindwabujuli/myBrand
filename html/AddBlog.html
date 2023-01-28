@@ -18,6 +18,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/textRich.css" />
     <link rel="stylesheet" href="../css/adminPanel.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -142,11 +143,20 @@
                     </div>
                     <input type="tetx" placeholder="Title" id="styleTitleField">
                     <div id="text-input" contenteditable="true"></div>
-                    <input type="button" value="Save" id="saveBtn">
+                    <input type="submit" value="Save" id="saveBtn">
                   </div>
                   <!--Script-->
                   
                   <script src="../js/textRich.js"></script>
+                  
+                    <div class="uploadImage"> 
+                      <form>
+                        <input type="file" id="file-input" name="image" accept="image/*">
+                        <button class="uploadBtn btn cta-contact ease-transition" type="submit">Upload</button>
+                      </form>
+                      
+                    </div>
+                
         </div>
         
     </main>

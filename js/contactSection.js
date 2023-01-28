@@ -64,21 +64,44 @@ document.addEventListener('DOMContentLoaded', ()=> {
         validate(eachField)
 
     })
-
+   
+        
+        
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
-        let message = {};
-        for(let each of formData){
-            message[each[0]] = each[1];
-
+        let userName = document.getElementById("names_field").value.trim();
+        let userEmail = document.getElementById("email_field").value.trim();
+        let userMessage = document.getElementById("description_field").value.trim();
+        let user ={
+            names: userName,
+            email: userEmail,
+            message:userMessage,
         }
-        console.log(message);
+        var usersFeedback;
+        if(checkValidation(fields)){
+            
+            if(localStorage.getItem("myPerson")){
+            usersFeedback= JSON.parse(localStorage.getItem("myPerson"));
+            usersFeedback.push(user); 
+            }else{
+                usersFeedback = [];
+                usersFeedback.push(user);
+                
+            }
+            localStorage.setItem("myPerson",JSON.stringify(usersFeedback));
+            location.reload();
+        }
+         
+
+       
+       console.log(user);
         let isFormValid = checkValidation(fields)
         if(!isFormValid){
             event.preventDefault();
         }
+        
     });
 
 
