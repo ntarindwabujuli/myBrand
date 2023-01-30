@@ -49,6 +49,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     })
     form.addEventListener("submit", (event) => {
+        let userEmail = document.getElementById("input-field").value;
+        let userPassword = document.getElementById("password_field").value;
+        let credentials ={
+            email: userEmail,
+            password:userPassword,
+        }
+        var userCredentials;
+        if(checkValidation(fields)){
+            
+            if(localStorage.getItem("credentials")){
+                userCredentials= JSON.parse(localStorage.getItem("credentials"));
+                userCredentials.push(credentials); 
+            }else{
+                userCredentials = [];
+                userCredentials.push(credentials);
+                
+            }
+            localStorage.setItem("credentials",JSON.stringify(userCredentials));
+            location.reload();
+        }
+    
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
         for(let each of formData){

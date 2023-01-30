@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 }
             ]
         },
+       
         {
             name:'description',
             field:"description_field",
@@ -63,14 +64,44 @@ document.addEventListener('DOMContentLoaded', ()=> {
         validate(eachField)
 
     })
-
+   
+        
+        
     form.addEventListener("submit", (event) => {
+        event.preventDefault();
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
+        let userName = document.getElementById("names_field").value.trim();
+        let userEmail = document.getElementById("email_field").value.trim();
+        let userMessage = document.getElementById("description_field").value.trim();
+        let user ={
+            names: userName,
+            email: userEmail,
+            message:userMessage,
+        }
+        var usersFeedback;
+        if(checkValidation(fields)){
+            
+            if(localStorage.getItem("userComments")){
+            usersFeedback= JSON.parse(localStorage.getItem("userComments"));
+            usersFeedback.push(user); 
+            }else{
+                usersFeedback = [];
+                usersFeedback.push(user);
+                
+            }
+            localStorage.setItem("userComments",JSON.stringify(usersFeedback));
+            location.reload();
+        }
+         
+
+       
+       console.log(user);
         let isFormValid = checkValidation(fields)
         if(!isFormValid){
             event.preventDefault();
         }
+        
     });
 
 
