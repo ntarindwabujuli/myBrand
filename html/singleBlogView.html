@@ -8,7 +8,7 @@
 
     <title>NTARINDWA Jackson | Cloud Engineer</title>
     <meta name="description"
-        content="I'm a full-stack web developer based in San Diego, CA specializing in building high-quality websites and applications.">
+        content="I'm a full-stack web developer based in Kigali, Rwanda specializing in building high-quality websites and applications.">
     <link rel="icon" href="assets/favicon.ico" type="image/gif" sizes="16x16">
 
     <!--  Facebook META Tags -->
@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/hamburgers.css">
     <link rel="stylesheet" href="../css/singleBlogView.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -131,14 +134,19 @@
             </nav>
             <section>
                 <div class="blogView">
-                    <img src="../assets/blogview.png" />
+                    <img id="image" src="../assets/blogview.png" />
+                    <span id="clickToLike" class="text-brand-color flex flex-col items-center gap-1 cursor-pointer">
+              <span class="material-symbols-outlined">favorite</span>
+              <span id="likes_count">0</span>
+            </span>
                     <div class="authorTitle">
                       <img src="../assets/profileAurthor.png" />
                       <h4 id="author">NTARINDWA JACKSON</h4>
                     </div>
                
                     <div class="blogContent">
-                      <p class="page">
+                        <h3 id="title">blog title </h3>
+                      <p id="description" class="page">
                         Applications are now open for the techie challenge, with a $10,000
                         prize pot, swag, and much more! Calling all coders! It’s official;
                         the future of work is remote. According to Owl Labs, 56% of global
@@ -179,6 +187,20 @@
                       </p>
                     </div>
             </section>
+            <div class="comments-section" >
+                <h2>Comments</h2>
+                <div id="comment_section" class="comments-section">
+
+                    <div id="comment_container" class="comment">
+                        <img src="../assets/profileAurthor.png" alt="User Avatar" class="avatar">
+                        <div class="comment-details">
+                            <h3 id="names" class="comment-sender">Jane Smith</h3>
+                            <p id="comment" class="comment-text">I really enjoyed reading this.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section id="contact-section">
                 <h3 class="contact-section-name">05. // What's Next?</h3>
                 <h4 class="contact-headline">Get In Touch</h4>
@@ -189,25 +211,24 @@
                         Feel free to send any questions or say hi!
                     </p>
                 </div>
-                <form id="contact_form">
+                <form id="comment_form">
                     <div class="commentSection">
                         <input name="names" id="names_field" placeholder="Full Names" type="text" />
                         <span id="names_error" class="text-red-light"></span>
                         <input name="email" id="email_field" placeholder="Email" type="text" />
                         <span id="email_error" class="text-red-light"></span>
-                        <textarea name="description" id="description_field">
+                        <textarea name="comment" id="description_field">
                         
                         </textarea>
                           <span id="description_error" class="text-red-light"></span>
                         
                       </div>
-                </form>
-                
                     <div>
                         <button class="btn cta-contact ease-transition" name="ContactMe" type="submit">
                             Comment Now!
                         </button>
                     </div>
+                </form>
                     
             
             </section>
@@ -244,7 +265,9 @@
     </div>
 
     <script src="../js/script.js"></script>
-    <script src="../js/commentSection.js" type="module"></script>
+<!--    <script src="../js/commentSection.js" type="module"></script>-->
+    <script src="../js/singleBlogView.js" type="module"></script>
+
 </body>
 
 </html>

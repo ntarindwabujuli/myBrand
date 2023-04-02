@@ -1,4 +1,8 @@
 import {checkValidation, setAttributes, validate, patters} from "../js/validateAll.js";
+import endpoints from "./system/constants/endpoints.js";
+import keys from "./system/constants/keys.js";
+import Secure from "./system/secureLs.js";
+import Constants from "./system/constants/index.js";
 document.addEventListener('DOMContentLoaded', ()=> {
     const form = document.getElementById("login_form");
 
@@ -51,12 +55,30 @@ document.addEventListener('DOMContentLoaded', ()=> {
     form.addEventListener("submit", (event) => {
         // if the email field is valid, we let the form submit
         let formData = new FormData(event.target)
-        for(let each of formData){
-            console.log(each)
-        }
         let isFormValid = checkValidation(fields)
+        event.preventDefault();
         if(!isFormValid){
-            event.preventDefault();
+
+        }else {
+            let data = {}
+            for(let each of formData){
+                data[each[0]] = each[1]
+            }
+            axios
+                .post(`${Constants.DEFAULT_API}${endpoints.LOGIN}`, data)
+                .then(response => {
+                    console.log("response", response);
+                    const {
+                        data: { token, data },
+                    } = response;
+                    // setProfile({ ...user });
+                    Secure.setToken(token);
+                    Secure.set(keys.USER_INFO, { token, data });
+                    window.location.href = "adminPanel.html";
+                }).catch(error => {
+                console.error(error)
+                swal("Hari ikitagenze neza, Gerageza!",`${error.message}`, "error");
+            })
         }
     });
 

@@ -30,19 +30,24 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
 }
-.articlesTab{
+.messageTab{
   display: flex;
   flex-direction: row;
   color:#DDE2FF;
+
 }
+.messageTab:hover {
+  background-color: #00ad8d;
+}
+
 .sideBarTabs{
   margin-top: 15px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px; 
+  gap: 30px;
   padding-left: 1rem;
-   
+
 }
 .innerContent{
   display: flex;
@@ -56,13 +61,18 @@ body {
   gap:45rem;
 }
 .uploadBtn{
-  padding: 100px 180px 20px 50px;
   margin-left: 40px;
+  width: 100px;
+}
+.formBtn{
+  display: flex;
+  flex-direction: row;
 }
 #file-input{
   border-style: dashed;
   border-color: #01b192;
   margin-left: 40px;
+  border-radius: 10px;
 }
 .searchBox input{
   background-color: #09816B;

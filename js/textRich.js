@@ -18,6 +18,7 @@ let fontList = [
   "Georgia",
   "Courier New",
   "cursive",
+  "montserrat"
 ];
 
 //Initial Settings
@@ -115,3 +116,27 @@ const highlighterRemover = (className) => {
 };
 
 window.onload = initializer();
+
+// add local storage Codes
+
+const formBlog = document.getElementById("form-blog");
+formBlog.addEventListener("submit", (event) => {
+  let blogTitle = document.getElementById("styleTitleField").value;
+  let blog = document.getElementById("text-input").value;
+  let blogContent = {
+    title: blogTitle,
+    blogBody :blog,
+  }
+  var blogStore;
+  if(localStorage.getItem("blogContent")){
+    blogStore= JSON.parse(localStorage.getItem("blogContent"));
+    blogStore.push(blogContent);
+  }else{
+    blogStore = [];
+    blogStore.push(blogContent);
+
+  }
+  localStorage.setItem("blogContent",JSON.stringify(blogStore));
+  location.reload();
+
+});

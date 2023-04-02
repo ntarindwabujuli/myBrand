@@ -8,7 +8,7 @@
 
     <title>NTARINDWA Jackson | Cloud Engineer</title>
     <meta name="description"
-        content="I'm a full-stack web developer based in San Diego, CA specializing in building high-quality websites and applications.">
+        content="I'm a full-stack web developer based in Kigali, Rwanda specializing in building high-quality websites and applications.">
     <link rel="icon" href="assets/favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -27,9 +27,11 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/hamburgers.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hamburgers.css"> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -77,8 +79,7 @@
                         <a class="navLink" data-id="about-section"><span class="numbersNav">01.// </span>About</a>
                         <a class="navLink" data-id="experience-section"><span class="numbersNav">02.// </span>Experience</a>
                         <a class="navLink" data-id="projects-section"><span class="numbersNav">03.// </span>Work</a>
-                        <a class="navLink" data-id="recentBlogs"><span class="numbersNav">04.// </span>Blog</a>
-                        <a class="navLink" data-id="contact-section"><span class="numbersNav">05.// </span>Contact</a>
+                        <a class="navLink" data-id="contact-section"><span class="numbersNav">04.// </span>Contact</a>
                         <a href="assets/myResume.pdf" target="_blank"><button
                                 class="navLink ease-transition" name="Resume">Resume</button>
                         </a>
@@ -112,16 +113,12 @@
                                             class="mobile-nav-section-numbers">03.</span>
                                         <br />Work</a>
                                 </li>
+                              
                                 <li>
                                     <a class="mobile-nav-link" href="#contact-section"><span
-                                            class="mobile-nav-section-numbers">05.</span>
-                                        <br />Blog</a>
-                                </li>
-                                <li>
-                                    <a class="mobile-nav-link" href="#contact-section"><span
-                                            class="mobile-nav-section-numbers">05.</span>
+                                            class="mobile-nav-section-numbers">04.</span>
                                         <br />Contact</a>
-                                </li>
+                                </li>   
                             </ol>
                             <a href="assets/myResume.pdf" target="_blank"><button
                                     class="mobile-nav-link mobile-nav-button" name="Resume">Resume</button>
@@ -134,7 +131,7 @@
                 <span id="hero-pre-text">Hi, my name is</span>
                 <h1 id="hero-name" class="hero-header-text">NTARINDWA Jackson.</h1>
                 <h2 id="hero-tagline" class="hero-header-text">I build things for the web.</h2>
-                <h3 id="subheader-text">I'm a front end engineer based in Kigali, RWANDA specializing in
+                <h3 id="subheader-text">I'm a frontEnd engineer based in Kigali, RWANDA specializing in
                     building high-quality websites and applications.</h3>
                     <a href="mailto:jackson@ntarindwa.dev" target="_blank">
                         <button class="btn cta-contact ease-transition" name="Contact Me">
@@ -148,22 +145,22 @@
                 <div id="about-content">
                     <div id="bio-para">
                         <p>
-                            Hello! I'm NTARINDWA, a front end engineer leveraging a background in technical project management to build high-quality websites and applications. I earned a certificate in Full Stack Development from the <a class="animate-links" href="https://scriptylabs.rw/" target="_blank" rel="noopener">Andela Techinical Leadership Program</a> to add technical expertise alongside my BS in Software Engineering from the <a class="animate-links" href="https://auca.ac.rw/" target="_blank" rel="noopener">Advantist University of Central Africa</a>.
+                            Hello! I'm NTARINDWA, a frontEnd engineer leveraging a background in technical project management to build high-quality websites and applications. I currently learning to become a Full Stack Development from the <a class="animate-links" href="https://andela.com/" target="_blank" rel="noopener">Andela Techinical Leadership Program</a> to add technical expertise alongside my Career in Software Engineering from the <a class="animate-links" href="https://auca.ac.rw/" target="_blank" rel="noopener">Advantist University of Central Africa</a>.
                         </p>
                         <p>
                             These are some technologies I have been using:
                         </p>
                         <ul class="tech-skills-list">
-                            <li>UI/UX Design</li>
-                            <li>HTML5 </li>
+                            <li>NextJS</li>
+                            <li>NodeJS</li>
                             <li>Tailwind CSS</li>
-                            <li>Syled Components</li>
-                            <li>Contentful</li>
-                            <li>Graphic Design</li>
+                            <li>Angular</li>
+                            <li>Gatsby</li>
+                            <li>Design:Figma,AdobeXD</li>
                         </ul>
                     </div>
                     <div id="headshot-container">
-                        <img src="../assets/myPicture.png" alt="NTARINDWA Jackson" id="headshot">
+                        <img src="./assets/myPicture.png" alt="NTARINDWA Jackson" id="headshot">
                     </div>
                 </div>
             </section>
@@ -192,7 +189,7 @@
                 <div class="featured-project-card">
                     <a href="https://github.com/ntarindwabujuli/myBrand"
                         target="_blank" class="card-screenshot">
-                        <img src="../assets/design.png" alt="Feedback Loft Logo">
+                        <img src="./assets/design.png" alt="Feedback Loft Logo">
                     </a>
                     <div class="featured-project-details">
                         <h4 class="feature-text">Featured Project</h4>
@@ -216,7 +213,7 @@
                             <li class="tech-item">Auth0</li>
                             <li class="tech-item">Tailwind CSS</li>                            
                         </ul>
-                        <a href="https://github.com/ntarindwabujuli/myBrand"
+                        <a href="https://github.com/scriptylabsdotrw"
                             target="_blank" rel="noopener">
                             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549"
                                 class="project-link-icons">
@@ -233,29 +230,22 @@
                 <div class="featured-project-card">
                     <a href="https://github.com/ntarindwabujujuli/projejcts"
                         target="_blank" class="card-screenshot">
-                        <img src="../assets/scriptylabs.png" alt="ScriptyLabs Logo">
+                        <img src="./assets/scriptylabs.png" alt="ScriptyLabs Logo">
                     </a>
                     <div class="featured-project-details">
                         <h4 class="feature-text">Featured Project</h4>
                         <h5 class="project-title project-title-small">
                             <a href="https://github.com/ntarindwabujul/projects" target="_blank">Coding Review Hub</a>
                         </h5>
-                        <div class="badge-container">
-                            <a id="chrome-browser-badge" href="https://chrome.google.com/webstore/detail/time-saver-for-youtube/nkfcgfkioefgclgcilgocbdnlhbfmcaf/null" target="_blank">
-                                    <img src="https://camo.githubusercontent.com/105274635aff39b4fb2835bc730ac90badc2ad25/68747470733a2f2f692e696d6775722e636f6d2f364437465338652e706e67" alt="Google Chrome Store Badge" />
-                            </a>
-                            <a id="firefox-browser-badge" href="https://addons.mozilla.org/en-US/firefox/addon/time-saver-for-youtube/" target="_blank">
-                                <img src="https://camo.githubusercontent.com/d5cad28c7b0766436be95a150553030db0f554ae/68747470733a2f2f692e696d6775722e636f6d2f6d44334a5966642e706e67" alt="Mozilla Firefox Add-on Badge" />
-                            </a>
-                        </div>
+                        
                         <div class="project-description project-description-small">
                             <p>
-                                Browser extension that displays the time saved when playback speed of a YouTube video is changed.
+                                Coding review hub is a website where developers can share their code and receive feedback from other professionals. It helps improve code quality and promotes collaboration among developers.
                             </p>
                         </div>
                         <ul class="technology-list">
-                            <li class="tech-item">Chrome API</li>
-                            <li class="tech-item">YouTube API</li>
+                            <li class="tech-item">NextJS</li>
+                            <li class="tech-item">TailwindCSS</li>
                         </ul>
                         <a href="https://github.com/ntarindwabujuli"
                             target="_blank" rel="noopener">
@@ -273,7 +263,7 @@
                 </div>
                 <div class="featured-project-card">
                     <a href="https://ntarindwabujuli/projects/" target="_blank" class="card-screenshot">
-                        <img src="../assets/agromex.png" alt="Password Generator Screenshot">
+                        <img src="./assets/agromex.png" alt="Password Generator Screenshot">
                     </a>
                     <div class="featured-project-details">
                         <h4 class="feature-text">Featured Project</h4>
@@ -304,196 +294,10 @@
                 </div>
                 
             </section>
-            <section id="recentBlogs">
-                <div class="recentBlog">
-                    <div class="recentBlogTitle">
-                        <h3 class="section-headline"><span class="section-number">04. //</span> Recent Blogs</h3>
-
-                     </div>
-                     <div class="blogs">
-                        <!-- Blog Container-->
-                        <div class="blogContainerOne">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                    width="24" height="24"
-                                    viewBox="0 0 24 24">
-                                    <path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path>
-                                </svg>
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                     with WordPress Multisite
-                                </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                        
-                        </div>
-                        <!--End of blog Container-->
-                        <!-- Blog ContainerTwo-->
-                        <div class="blogContainerTwo">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                    with WordPress Multisite
-                               </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                        
-                        </div>
-                        <!--End of blog Container-->
-                        <!-- Blog Container-->
-                        <div class="blogContainerThree">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                <span class="material-symbols-outlined">
-                                        transit_enterexit
-                                 </span>
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                    with WordPress Multisite
-                               </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                            
-                        </div>
-                        <!--End of blog Container-->
-                        
-                     </div>
-            
-                     <div class="blogs">
-                        <!-- Blog Container-->
-                        <div class="blogContainerOne">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                <span class="material-symbols-outlined">
-                                        transit_enterexit
-                                 </span>
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                    with WordPress Multisite
-                                </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                        
-                        </div>
-                        <!--End of blog Container-->
-                        <!-- Blog ContainerTwo-->
-                        <div class="blogContainerTwo">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    transit_enterexit
-                                </span>
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                    with WordPress Multisite
-                               </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                        
-                        </div>
-                        <!--End of blog Container-->
-                        <!-- Blog Container-->
-                        <div class="blogContainerThree">
-                            <div class="blogIcons">
-                                <span class="material-symbols-outlined">
-                                    folder
-                                </span>
-                                <span class="material-symbols-outlined">
-                                        transit_enterexit
-                                 </span>
-                            </div>
-                            <div class="headingBlog">
-                                <a href="singleBlogView.html"><h4 id="blogTitle">Integrating Algolia Search
-                                    with WordPress Multisite
-                               </h4></a>
-                                <p id="blogParagraphOne">
-                                    Building a custom multisite compatible
-                                     WordPress plugin to build global search with Algolia
-                                </p>
-                            </div>
-                            <div class="blogCategory">
-                                <h6 class="headerSixColor">Algolia</h6>
-                                <h6 class="headerSixColor">WordPress</h6>
-                                <h6 class="headerSixColor">PHP</h6>
-                            </div>
-                            
-                            
-                        </div>
-                        <!--End of blog Container-->
-                        
-                     </div>
-                     <button class="viewMore" type="submit"> View More</button>
-               
-                
-                
-                <!--END  of recentBlogSection-->
-            </section>
+         
             <section id="contact-section">
-                <h3 class="contact-section-name">05. // What's Next?</h3>
-                <h4 class="contact-headline">Get In Touch</h4>
+                <h3 class="contact-section-name">04. // What's Next?</h3>
+                <h4 class="contact-headline">Get InTouch</h4>
                 <div class="contact-text">
                     <p>
                         My inbox is always open.
@@ -554,8 +358,8 @@
         </div>
     </div>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/contactSection.js" type="module"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/contactSection.js" type="module"></script>
     
 </body>
 
